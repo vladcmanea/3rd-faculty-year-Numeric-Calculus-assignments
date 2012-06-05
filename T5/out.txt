@@ -1,0 +1,26 @@
+Precision: 1.0E-5, maximum number of iteration: 10000
+The A matrix of dimension (4, 3) is: 
+---------------------------------
+2.0 3.0 4.0 
+3.0 4.0 5.0 
+4.0 5.0 6.0 
+1.0 2.0 3.0 
+---------------------------------
+[SingleValueDecomposition]The singular values are: 13.011193721236573 0.8419251442105354 0.0
+[SingleValueDecomposition]The Matrix rang is 2
+[SingleValueDecomposition]The conditionary matrix value is: 15.45409804031573
+[SingleValueDecomposition]The Infinity Norm || A - USVt || is:3.774758283725532E-15
+[SingleValueDecomposition]The Moore Penrose Matrix is: 
+--------------------------------------------
+-0.3333333333333326 0.08333333333333327 0.5 -0.7500000000000011 
+-0.03333333333333319 0.03333333333333332 0.09999999999999996 -0.10000000000000007 
+0.26666666666666616 -0.01666666666666663 -0.3 0.5500000000000008 
+--------------------------------------------
+[SingleValueDecomposition]The sistem solution for Ax = b, xi = Ai*b is:
+-----------
+0.1537396954677447 
+0.0662270604960984 
+-0.021285574475547867 
+-----------
+[SingleValueDecomposition]Norm2 || b - A * XI || = 0.2900482291235305
+[SingleValueDecomposition]Norm2 || XI || = 0.16874535011437455

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="outputBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>561</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Output</string>
+    </property>
+    <widget class="QTextEdit" name="outputMessage">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>531</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="inputBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>561</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Input Function Used and its description</string>
+    </property>
+    <widget class="QGroupBox" name="polinomial">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>521</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Polinomial Function Arguments</string>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>28</x>
+        <y>115</y>
+        <width>331</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Note. The order in which coefficients are processed is: right to left!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>56</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Coefficients</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="grad">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>21</y>
+        <width>51</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>13</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>29</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Grade</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>50</y>
+        <width>411</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="coef">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="c0">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="c1">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="c2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="c3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLineEdit" name="c4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLineEdit" name="c5">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLineEdit" name="c6">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="c7">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="c8">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="c9">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="c10">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="c11">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLineEdit" name="c12">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLineEdit" name="c13">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="expoGroup">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Exponential Function</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>151</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>base</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="expoBase">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Other Functions</string>
+     </property>
+     <widget class="QCheckBox" name="logarithmicFunction">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>logarithmic function</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cosinusFunction">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>cosinus function</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="sinusFunction">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>sinus function</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>579</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuStep_one">
+     <property name="title">
+      <string>Step one</string>
+     </property>
+     <widget class="QMenu" name="menuChoose_Function">
+      <property name="title">
+       <string>Choose Function</string>
+      </property>
+      <addaction name="Polinom"/>
+      <addaction name="Logarithm"/>
+      <addaction name="Exponential"/>
+      <addaction name="Sinus"/>
+      <addaction name="Cosinus"/>
+     </widget>
+     <addaction name="actionImport_from_file"/>
+     <addaction name="menuChoose_Function"/>
+    </widget>
+    <widget class="QMenu" name="menuStep_Two">
+     <property name="title">
+      <string>Step Two</string>
+     </property>
+     <widget class="QMenu" name="menuStart">
+      <property name="title">
+       <string>Start</string>
+      </property>
+      <addaction name="Newton"/>
+      <addaction name="Secant"/>
+      <addaction name="separator"/>
+      <addaction name="Both"/>
+     </widget>
+     <addaction name="menuStart"/>
+     <addaction name="stop"/>
+    </widget>
+    <addaction name="menuStep_one"/>
+    <addaction name="separator"/>
+    <addaction name="menuStep_Two"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="stop">
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="newton">
+   <property name="text">
+    <string>Newton Rapson Method</string>
+   </property>
+  </action>
+  <action name="secant">
+   <property name="text">
+    <string>Secant Method</string>
+   </property>
+  </action>
+  <action name="both">
+   <property name="text">
+    <string>Both Metods</string>
+   </property>
+  </action>
+  <action name="polinom">
+   <property name="text">
+    <string>Polinomial</string>
+   </property>
+  </action>
+  <action name="logarithm">
+   <property name="text">
+    <string>Logaritm</string>
+   </property>
+  </action>
+  <action name="cosinus">
+   <property name="text">
+    <string>cosinus</string>
+   </property>
+  </action>
+  <action name="sinus">
+   <property name="text">
+    <string>sinus</string>
+   </property>
+  </action>
+  <action name="exponential">
+   <property name="text">
+    <string>exponential</string>
+   </property>
+  </action>
+  <action name="actionImport_from_file">
+   <property name="text">
+    <string>Import from file...</string>
+   </property>
+  </action>
+  <action name="Polinom">
+   <property name="text">
+    <string>Polinomial</string>
+   </property>
+  </action>
+  <action name="Logarithm">
+   <property name="text">
+    <string>Logaritmic</string>
+   </property>
+  </action>
+  <action name="Exponential">
+   <property name="text">
+    <string>Exponential</string>
+   </property>
+  </action>
+  <action name="Sinus">
+   <property name="text">
+    <string>Sinus</string>
+   </property>
+  </action>
+  <action name="Cosinus">
+   <property name="text">
+    <string>Cosinus</string>
+   </property>
+  </action>
+  <action name="Newton">
+   <property name="text">
+    <string>Newton Rapson Method</string>
+   </property>
+  </action>
+  <action name="Secant">
+   <property name="text">
+    <string>Secant Method</string>
+   </property>
+  </action>
+  <action name="Both">
+   <property name="text">
+    <string>Both Methods</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

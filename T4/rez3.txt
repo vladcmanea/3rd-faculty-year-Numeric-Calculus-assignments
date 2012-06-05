@@ -1,0 +1,2 @@
+Caution: matrix may not be diagonally dominant
+Diverges

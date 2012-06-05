@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\model.o
+./debug\methodinputdialog.o
+./debug\dialog.o
+./debug\secantmethodthread.o
+./debug\newtonmethodthread.o
+./debug\moc_mainwindow.o
+./debug\moc_dialog.o
+./debug\moc_secantmethodthread.o
+./debug\moc_newtonmethodthread.o
+);
